@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>nueva</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input
+      label="Nombre de la variable a buscar"
+      labelPlacement="floating"
+      placeholder="Ingrese un nombre"
+      [(ngModel)]="nombre">
+    </ion-input>
+    <ion-button color="success" (click)="buscar()">Buscar variable</ion-button>
+  </ion-item>
+</ion-content>

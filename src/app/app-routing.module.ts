@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'nueva',
+    loadChildren: () => import('./nueva/nueva.module').then( m => m.NuevaPageModule)
+  },
 ];
 
 @NgModule({
